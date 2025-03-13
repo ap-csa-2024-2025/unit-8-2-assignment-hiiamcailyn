@@ -8,7 +8,7 @@ public class Main
     double[] foo = new double[5];
     foo[0] = 2;
     foo[1] = 4;
-    System.out.println(sumArray.foo);
+    System.out.println(sumArray(foo));
    
 
 
@@ -41,7 +41,7 @@ public class Main
     double sum = 0.0;
     for(int i = 0; i < arr.length; i++)
     {
-      sum += arr[i].length;
+      sum += arr[i].length();
     }
     return sum/arr.length;
   }
@@ -59,7 +59,7 @@ public class Main
     return max;
   }
 
-  public static boolean linearSearch(String[] arr)
+  public static boolean linearSearch(String[] arr, String target)
   {
     for(int i = 0; i <arr.length; i++)
     {
